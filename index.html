@@ -1,54 +1,768 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="LGvideo" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lgvideo.lt" />
-    <meta property="og:image" content="https://lgvideo.lt/images/logo-1080.jpg" />
-    <meta property="og:description" content="LGvideo | Puslapis kuriamas! Prašome sugrįžti vėliau." />
-    <meta name="theme-color" content="#FFFFFF">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="author" content="LGvideo" />
-    <link rel="shortcut icon" href="https://lgvideo.lt/images/logo-1080.jpg" type="">
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>LGvideo</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #000000;
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-        }
 
-        .container {
-            text-align: center;
-            background-color: #ffffff;
-            padding: 50px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-        h1 {
-            font-size: 3em;
-            color: #333;
-            margin: 0;
-        }
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
 
-        p {
-            font-size: 1.5em;
-            color: #777;
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Puslapis kuriamas!</h1>
-        <p>Prašome sugrįžti vėliau</p>
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+      <div class="loader"></div>
     </div>
-</body>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <a href="https://lgvideo.lt/"><img src="https://lgvideo.lt/images/logo/lgvideo/80.jpg" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="header__nav__option">
+              <nav class="header__nav__menu mobile-menu">
+                <ul>
+                  <li class="active"><a href="/index.html">Pagrindinis</a></li>
+                  <li><a href="#">Apie</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Paslaugos</a></li>
+                  <li><a href="#">Kontaktai</a></li>
+                </ul>
+              </nav>
+              <div class="header__nav__social">
+                <a href="https://www.facebook.com/lgvideo.lt" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/lgvideo.lt" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@lgvideo5507" target="_blank"><i class="fa fa-youtube-play"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+      <div class="hero__slider owl-carousel">
+        <div class="hero__item set-bg" data-setbg="img/hero/full-1.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="hero__text">
+                  <span>LGvideo.lt</span>
+                  <h2>Vestuvėms</h2>
+                  <a href="#" class="primary-btn">Susisiekite (jau greitai)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__item set-bg" data-setbg="img/hero/full-2.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="hero__text">
+                  <span>LGvideo.lt</span>
+                  <h2>Renginiams</h2>
+                  <a href="#" class="primary-btn">Susisiekite (jau greitai)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__item set-bg" data-setbg="img/hero/full-3.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="hero__text">
+                  <span>LGvideo.lt</span>
+                  <h2>Komerciniams<br>projektams</h2>
+                  <a href="#" class="primary-btn">Susisiekite (jau greitai)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__item set-bg" data-setbg="img/hero/full-4.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="hero__text">
+                  <span>LGvideo.lt</span>
+                  <h2>Muzikos<br>klipams</h2>
+                  <a href="#" class="primary-btn">Susisiekite (jau greitai)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__item set-bg" data-setbg="img/hero/full-5.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="hero__text">
+                  <span>LGvideo.lt</span>
+                  <h2>Reklamai</h2>
+                  <a href="#" class="primary-btn">Susisiekite (jau greitai)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__item set-bg" data-setbg="img/hero/full-6.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="hero__text">
+                  <span>LGvideo.lt</span>
+                  <h2>Asmeniniams<br>projektams</h2>
+                  <a href="#" class="primary-btn">Susisiekite (jau greitai)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="services__title">
+              <div class="section-title">
+                <span>Paslaugos</span>
+                <h2>Kodėl verta rinktis mane?</h2>
+              </div>
+              <p>
+                Pasirinkite mane, jei norite aukštos kokybės vaizdo įrašų, kurie pritrauks dėmesį ir išliks įsimintini.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="img/icons/si-1.png" alt="" />
+                  </div>
+                  <h4>Patirtis ir profesionalumas</h4>
+                  <p>
+                    Turiu ilgametę patirtį dirbant su įvairiais klientais ir projektais, todėl gebu prisitaikyti prie jūsų poreikių ir užtikrinti kokybišką rezultatą.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="img/icons/si-2.png" alt="" />
+                  </div>
+                  <h4>Kūrybiškas požiūris</h4>
+                  <p>
+                    Kiekvienam projektui taikau individualų požiūrį, kad jūsų vaizdo įrašas būtų unikalus ir išskirtinis.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="img/icons/si-2.png" alt="" />
+                  </div>
+                  <h4>Moderni įranga</h4>
+                  <p>
+                    Naudoju naujausią filmavimo techniką ir redagavimo programas, todėl galiu užtikrinti aukštą vaizdo ir garso kokybę.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="img/icons/si-1.png" alt="" />
+                  </div>
+                  <h4>Greitas ir efektyvus darbas</h4>
+                  <p>
+                    Esu įsipareigojęs laiku pateikti galutinį produktą, neprarandant kokybės ir dėmesio detalėms.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="img/icons/si-3.png" alt="" />
+                  </div>
+                  <h4>Asmeninis dėmesys</h4>
+                  <p>
+                    Stengiuosi užmegzti glaudų bendradarbiavimą su klientais, kad kiekvienas vaizdo įrašas atitiktų jų viziją ir lūkesčius.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="services__item">
+                  <div class="services__item__icon">
+                    <img src="img/icons/si-4.png" alt="" />
+                  </div>
+                  <h4>Inovatyvūs sprendimai</h4>
+                  <p>
+                    Nuolat domiuosi naujausiomis vaizdo kūrimo tendencijomis ir technologijomis, kad galėčiau pasiūlyti šiuolaikiškus ir pažangius sprendimus jūsų projektui.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Work Section Begin -->
+    <section class="work">
+      <div class="work__gallery">
+        <div class="grid-sizer"></div>
+        <div
+          class="work__item wide__item set-bg"
+          data-setbg="img/work/vid-1.jpg"
+        >
+          <a
+            href="https://www.youtube.com/embed/pLFUd83zuN8"
+            class="play-btn video-popup"
+            ><i class="fa fa-play"></i
+          ></a>
+        </div>
+        <div
+          class="work__item small__item set-bg"
+          data-setbg="img/work/vid-2.jpg"
+        >
+          <a
+            href="https://www.youtube.com/embed/2xXwZLo5yuk"
+            class="play-btn video-popup"
+            ><i class="fa fa-play"></i
+          ></a>
+        </div>
+        <div
+          class="work__item small__item set-bg"
+          data-setbg="img/work/vid-3.jpg"
+        >
+          <a
+            href="https://www.youtube.com/embed/elxV0i2qg4o"
+            class="play-btn video-popup"
+            ><i class="fa fa-play"></i
+          ></a>
+        </div>
+        <div
+          class="work__item large__item set-bg"
+          data-setbg="img/work/vid-4.jpg"
+        >
+          <a
+            href="https://www.youtube.com/embed/qKRiHx0dX7k"
+            class="play-btn video-popup"
+            ><i class="fa fa-play"></i
+          ></a>
+        </div>
+        <div
+          class="work__item small__item set-bg"
+          data-setbg="img/work/vid-5.jpg"
+        >
+          <a
+            href="https://www.youtube.com/embed/n9nFDjq-WNQ"
+            class="play-btn video-popup"
+            ><i class="fa fa-play"></i
+          ></a>
+        </div>
+        <div
+          class="work__item small__item set-bg"
+          data-setbg="img/work/vid-6.jpg"
+        >
+          <a
+            href="https://www.youtube.com/embed/WZ42l29Pbnw"
+            class="play-btn video-popup"
+            ><i class="fa fa-play"></i
+          ></a>
+        </div>
+        <div
+          class="work__item wide__item set-bg"
+          data-setbg="img/work/vid-7.jpg"
+        >
+          <a
+            href="https://www.youtube.com/embed/3v-b45kU9mM"
+            class="play-btn video-popup"
+            ><i class="fa fa-play"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- Work Section End -->
+
+    <!-- Counter Section Begin -->
+    <!-- <section class="counter">
+      <div class="container">
+        <div class="counter__content">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter__item">
+                <div class="counter__item__text">
+                  <img src="img/icons/ci-1.png" alt="" />
+                  <h2 class="counter_num">230</h2>
+                  <p>Compled Projects</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter__item second__item">
+                <div class="counter__item__text">
+                  <img src="img/icons/ci-2.png" alt="" />
+                  <h2 class="counter_num">1068</h2>
+                  <p>Happy clients</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter__item third__item">
+                <div class="counter__item__text">
+                  <img src="img/icons/ci-3.png" alt="" />
+                  <h2 class="counter_num">230</h2>
+                  <p>Perspective clients</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter__item four__item">
+                <div class="counter__item__text">
+                  <img src="img/icons/ci-4.png" alt="" />
+                  <h2 class="counter_num">230</h2>
+                  <p>Compled Projects</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+    <!-- <section class="team spad set-bg" data-setbg="img/team-bg.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title team__title">
+              <span>Nice to meet</span>
+              <h2>OUR Team</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
+              <div class="team__item__text">
+                <h4>AMANDA STONE</h4>
+                <p>Videographer</p>
+                <div class="team__item__social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
+              <div class="team__item__text">
+                <h4>AMANDA STONE</h4>
+                <p>Videographer</p>
+                <div class="team__item__social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
+              <div class="team__item__text">
+                <h4>AMANDA STONE</h4>
+                <p>Videographer</p>
+                <div class="team__item__social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
+              <div class="team__item__text">
+                <h4>AMANDA STONE</h4>
+                <p>Videographer</p>
+                <div class="team__item__social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
+              <div class="team__item__text">
+                <h4>AMANDA STONE</h4>
+                <p>Videographer</p>
+                <div class="team__item__social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
+              <div class="team__item__text">
+                <h4>AMANDA STONE</h4>
+                <p>Videographer</p>
+                <div class="team__item__social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
+              <div class="team__item__text">
+                <h4>AMANDA STONE</h4>
+                <p>Videographer</p>
+                <div class="team__item__social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
+              <div class="team__item__text">
+                <h4>AMANDA STONE</h4>
+                <p>Videographer</p>
+                <div class="team__item__social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div
+              class="team__item team__item--second set-bg"
+              data-setbg="img/team/team-2.jpg"
+            >
+              <div class="team__item__text">
+                <h4>AMANDA STONE</h4>
+                <p>Videographer</p>
+                <div class="team__item__social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div
+              class="team__item team__item--third set-bg"
+              data-setbg="img/team/team-3.jpg"
+            >
+              <div class="team__item__text">
+                <h4>AMANDA STONE</h4>
+                <p>Videographer</p>
+                <div class="team__item__social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+            <div
+              class="team__item team__item--four set-bg"
+              data-setbg="img/team/team-4.jpg"
+            >
+              <div class="team__item__text">
+                <h4>AMANDA STONE</h4>
+                <p>Videographer</p>
+                <div class="team__item__social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 p-0">
+            <div class="team__btn">
+              <a href="#" class="primary-btn">Meet Our Team</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Team Section End -->
+
+    <!-- Latest Blog Section Begin -->
+    <!-- <section class="latest spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title center-title">
+              <span>Our Blog</span>
+              <h2>Blog Update</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="latest__slider owl-carousel">
+            <div class="col-lg-4">
+              <div class="blog__item latest__item">
+                <h4>What Makes Users Want to Share a Video on Social Media?</h4>
+                <ul>
+                  <li>Jan 03, 2020</li>
+                  <li>05 Comment</li>
+                </ul>
+                <p>
+                  We recently launched a new website for a Vital client and
+                  wanted to share some of the cool features we were able...
+                </p>
+                <a href="#">Read more <span class="arrow_right"></span></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="blog__item latest__item">
+                <h4>Bumper Ads: How to Tell a Story in 6 Seconds</h4>
+                <ul>
+                  <li>Jan 03, 2020</li>
+                  <li>05 Comment</li>
+                </ul>
+                <p>
+                  We recently launched a new website for a Vital client and
+                  wanted to share some of the cool features we were able...
+                </p>
+                <a href="#">Read more <span class="arrow_right"></span></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="blog__item latest__item">
+                <h4>What Makes Users Want to Share a Video on Social Media?</h4>
+                <ul>
+                  <li>Jan 03, 2020</li>
+                  <li>05 Comment</li>
+                </ul>
+                <p>
+                  We recently launched a new website for a Vital client and
+                  wanted to share some of the cool features we were able...
+                </p>
+                <a href="#">Read more <span class="arrow_right"></span></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="blog__item latest__item">
+                <h4>Bumper Ads: How to Tell a Story in 6 Seconds</h4>
+                <ul>
+                  <li>Jan 03, 2020</li>
+                  <li>05 Comment</li>
+                </ul>
+                <p>
+                  We recently launched a new website for a Vital client and
+                  wanted to share some of the cool features we were able...
+                </p>
+                <a href="#">Read more <span class="arrow_right"></span></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="blog__item latest__item">
+                <h4>What Makes Users Want to Share a Video on Social Media?</h4>
+                <ul>
+                  <li>Jan 03, 2020</li>
+                  <li>05 Comment</li>
+                </ul>
+                <p>
+                  We recently launched a new website for a Vital client and
+                  wanted to share some of the cool features we were able...
+                </p>
+                <a href="#">Read more <span class="arrow_right"></span></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="blog__item latest__item">
+                <h4>What Makes Users Want to Share a Video on Social Media?</h4>
+                <ul>
+                  <li>Jan 03, 2020</li>
+                  <li>05 Comment</li>
+                </ul>
+                <p>
+                  We recently launched a new website for a Vital client and
+                  wanted to share some of the cool features we were able...
+                </p>
+                <a href="#">Read more <span class="arrow_right"></span></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="blog__item latest__item">
+                <h4>What Makes Users Want to Share a Video on Social Media?</h4>
+                <ul>
+                  <li>Jan 03, 2020</li>
+                  <li>05 Comment</li>
+                </ul>
+                <p>
+                  We recently launched a new website for a Vital client and
+                  wanted to share some of the cool features we were able...
+                </p>
+                <a href="#">Read more <span class="arrow_right"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Latest Blog Section End -->
+
+    <!-- Call To Action Section Begin -->
+    <section class="callto spad set-bg" data-setbg="img/callto-bg.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="callto__text">
+              <h2>Pasirinkite mane, jei norite aukštos kokybės vaizdo įrašų, kurie pritrauks dėmesį ir išliks įsimintini.</h2>
+              <p>Lgvideo.lt</p>
+              <a href="#">Susisiekite (jau greitai)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="footer__top__logo">
+                <a href="https://lgvideo.lt/"><img src="https://lgvideo.lt/images/logo/lgvideo/80.jpg" alt="" /></a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="footer__top__social">
+                <a href="https://www.facebook.com/lgvideo.lt"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/lgvideo.lt"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@lgvideo5507"><i class="fa fa-youtube-play"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__option">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="footer__option__item">
+                <h5>Apie mane</h5>
+                <p>
+                  Aš esu profesionalus video įrašų kūrėjas su ilgamete patirtimi kuriant aukštos kokybės vaizdo turinį. Mano paslaugos apima vestuvių, renginių, komercinių projektų, muzikinių vaizdo klipų, reklamos kampanijų bei asmeninių projektų filmavimą ir redagavimą. Naudoju modernią įrangą ir pažangias vaizdo redagavimo programas, kad kiekvienas projektas būtų unikalus ir atitiktų kliento poreikius. Mano tikslas – kurti vaizdo įrašus, kurie perteiktų emocijas, istorijas ir vizijas, išlaikant aukščiausią kokybę.
+                </p>
+                <a href="#" class="read__more">Daugiau <span class="arrow_right"></span></a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3">
+              <div class="footer__option__item">
+                <h5>Nuorodos</h5>
+                <ul>
+                  <li><a href="#">Pagrindinis</a></li>
+                  <li><a href="#">Apie</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Paslaugos</a></li>
+                  <li><a href="#">Kontaktai</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="footer__option__item">
+                <h5>Susisiekite (jau greitai)</h5>
+                <p>
+                  Įrašykite savo el. pašto adresą ir pradėkime pokalbį! (jau greitai)
+                </p>
+                <form action="#">
+                  <!-- <input type="text" placeholder="Email" /> -->
+                  <!-- <button type="submit"><i class="fa fa-send"></i></button> -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              <p class="footer__copyright__text">
+                &copy;
+                <a href="https://colorlib.com" target="_blank">Lgvideo.lt</a>
+              </p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
